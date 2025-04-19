@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>足球比赛赛前承诺系统</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container" id="loginContainer">
+            <h1>赛前承诺系统</h1>
+            <div class="qr-code-container">
+                <div id="qrCode" class="qr-code">
+                    <p>微信扫码登录</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-container hidden" id="uploadContainer">
+            <h2>身份信息上传</h2>
+            <div class="upload-form">
+                <div class="upload-box">
+                    <input type="file" id="idCardInput" accept="image/*" class="file-input">
+                    <label for="idCardInput" class="upload-label">
+                        <span>点击上传身份证照片</span>
+                    </label>
+                </div>
+                <div id="previewContainer" class="preview-container hidden">
+                    <img id="previewImage" src="" alt="预览图">
+                </div>
+                <button id="submitBtn" class="submit-btn" disabled>提交</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
